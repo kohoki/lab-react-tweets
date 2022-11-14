@@ -1,29 +1,26 @@
+import ProfileImage from "./ProfileImage";
+
 function Tweet({tweet}) {
- const {message, user, timestamp } = tweet
- const {name, image, handle} = user
- //console.log(name)
+
+ console.log(tweet)
 
 
   return (
-    <div className="tweet">ad
-      <img
-        src={image}
-        className="profile"
-        alt="profile"
-      />
+    <div className="tweet">
+      <ProfileImage image={tweet.user.image}/>
 
       <div className="body">
         <div className="top">
           <span className="user">
-            <span className="name">{name}</span>
-            <span className="handle">@{handle}</span>
+            <span className="name"></span>
+            <span className="handle">@</span>
           </span>
 
-          <span className="timestamp">{timestamp}</span>
+          <span className="timestamp"></span>
         </div>
 
         <p className="message">
-          {message}
+          
         </p>
 
         <div className="actions">
