@@ -5,7 +5,7 @@ function Tweet({tweet}) {
 
 
   return (
-    <div className="tweet">
+    <div className="tweet">ad
       <img
         src={image}
         className="profile"
